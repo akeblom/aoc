@@ -32,10 +32,6 @@ int day_1(String input, {bool part2 = false}) {
       return 0;
     }
 
-    for (final match in matches) {
-      print(match.group(1));
-    }
-
     final String? firstMatch = matches.first.group(1)?.toNumString();
     final String? lastMatch = matches.last.group(1)?.toNumString();
 
